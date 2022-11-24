@@ -1,0 +1,15 @@
+C:\Users\ip_sc\OneDrive\Рабочий стол\учеба\AddFromDenis\Number1\bin\Debug\net6.0\Number1.exe
+C:\Users\ip_sc\OneDrive\Рабочий стол\учеба\AddFromDenis\Number1\bin\Debug\net6.0\Number1.deps.json
+C:\Users\ip_sc\OneDrive\Рабочий стол\учеба\AddFromDenis\Number1\bin\Debug\net6.0\Number1.runtimeconfig.json
+C:\Users\ip_sc\OneDrive\Рабочий стол\учеба\AddFromDenis\Number1\bin\Debug\net6.0\Number1.dll
+C:\Users\ip_sc\OneDrive\Рабочий стол\учеба\AddFromDenis\Number1\bin\Debug\net6.0\Number1.pdb
+C:\Users\ip_sc\OneDrive\Рабочий стол\учеба\AddFromDenis\Number1\obj\Debug\net6.0\Number1.csproj.AssemblyReference.cache
+C:\Users\ip_sc\OneDrive\Рабочий стол\учеба\AddFromDenis\Number1\obj\Debug\net6.0\Number1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ip_sc\OneDrive\Рабочий стол\учеба\AddFromDenis\Number1\obj\Debug\net6.0\Number1.AssemblyInfoInputs.cache
+C:\Users\ip_sc\OneDrive\Рабочий стол\учеба\AddFromDenis\Number1\obj\Debug\net6.0\Number1.AssemblyInfo.cs
+C:\Users\ip_sc\OneDrive\Рабочий стол\учеба\AddFromDenis\Number1\obj\Debug\net6.0\Number1.csproj.CoreCompileInputs.cache
+C:\Users\ip_sc\OneDrive\Рабочий стол\учеба\AddFromDenis\Number1\obj\Debug\net6.0\Number1.dll
+C:\Users\ip_sc\OneDrive\Рабочий стол\учеба\AddFromDenis\Number1\obj\Debug\net6.0\refint\Number1.dll
+C:\Users\ip_sc\OneDrive\Рабочий стол\учеба\AddFromDenis\Number1\obj\Debug\net6.0\Number1.pdb
+C:\Users\ip_sc\OneDrive\Рабочий стол\учеба\AddFromDenis\Number1\obj\Debug\net6.0\Number1.genruntimeconfig.cache
+C:\Users\ip_sc\OneDrive\Рабочий стол\учеба\AddFromDenis\Number1\obj\Debug\net6.0\ref\Number1.dll
