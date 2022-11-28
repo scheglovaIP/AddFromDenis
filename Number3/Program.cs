@@ -30,7 +30,7 @@ for (; ; )
     if (userCommand.ToLower() == comNewAccount)
     {
         names = AddNewStr(names, "Введите имя пользователя: ");
-        emails = AddNewStr(emails, "Введите адрес электронной почты: ");
+        emails = AddNewStr(emails, "Введите логин (адрес электронной почты): ");
         
         while(true)
         {
