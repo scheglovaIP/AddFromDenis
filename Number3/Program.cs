@@ -16,11 +16,11 @@ for (; ; )
     if (userCommand.ToLower() == comExit) break;
     if (userCommand.ToLower() == comHelp)
     {
-        Console.WriteLine($"{comExit} exit");
-        Console.WriteLine($"{comHelp} help");
-        Console.WriteLine($"{comNewAccount} newaccount");
-        Console.WriteLine($"{comEnterAccount} enter");
-        Console.WriteLine($"{comWriteName} writename");
+        Console.WriteLine($"Для выхода из программы наберите {comExit}");
+        Console.WriteLine($"Для вывода справки наберите {comHelp}");
+        Console.WriteLine($"Для создания нового аккаунта наберите {comNewAccount}");
+        Console.WriteLine($"Для входа в аккаунт наберите {comEnterAccount}");
+        Console.WriteLine($"Для вывода имени по логину наберите {comWriteName}");
     }
     if (userCommand.ToLower() == comNewAccount)
     {
