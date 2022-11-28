@@ -1,6 +1,6 @@
 ﻿string comExit = "e";
 string comHelp = "h";
-string comNewAccount = "na";/*  */
+string comNewAccount = "na";
 string comEnterAccount = "en";
 string comWriteName = "wn";
 string[] names = { "Иван", "Варвара", "Василий", "Ирина" };
@@ -59,6 +59,21 @@ for (; ; )
             Console.WriteLine("Вы вошли в систему!");
         }
         else Console.WriteLine("Введены неверные имя пользователя или пароль!");
+    }
+    if (userCommand.ToLower() == comWriteName)
+    {
+        string searchLogin = ReadStr("Введите логин (адрес электронной почты, указанный при регистрации): ");
+        string output = "Пользователь с указанным логином не найден";
+
+        for (int i = 0; i < emails.Length; i++)
+        {
+            if (searchLogin == emails[i])
+            {
+                output = "Вас зовут " + names[i];
+                break;
+            }
+        }
+        Console.WriteLine(output);
     }
 }
 
