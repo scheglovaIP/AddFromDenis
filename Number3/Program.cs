@@ -1,16 +1,14 @@
-﻿string comExit = "exit";
-string comHelp = "help";
-string comNewAccount = "na";
-string comSetUserName = "username";
-string comSetEmail = "email";
-string comSetPassword = "pasword";
-string comEnterAccount = "enter";
-string comWriteName = "writename";
-string[] names = {"Иван", "Варвара", "Василий", "Ирина"};
-string[] emails = {"ivav@mail.ru", "varvara@mail.ru", "vasilii@mail.ru", "irina@mail.ru"};
-string[] passwords = {"30bdfy12", "12dfhdfhf01", "09dfcbkbq03", "17bhbyf10"};
+﻿string comExit = "e";
+string comHelp = "h";
+string comNewAccount = "na";/*  */
+string comEnterAccount = "en";
+string comWriteName = "wn";
+string[] names = { "Иван", "Варвара", "Василий", "Ирина" };
+string[] emails = { "ivan@mail.ru", "varvara@mail.ru", "vasilii@mail.ru", "irina@mail.ru" };
+string[] passwords = { "30bdfy12", "12dfhdfhf01", "09dfcbkbq03", "17bhbyf10" };
 
 string userCommand = string.Empty;
+
 
 for (; ; )
 {
@@ -21,9 +19,6 @@ for (; ; )
         Console.WriteLine($"{comExit} exit");
         Console.WriteLine($"{comHelp} help");
         Console.WriteLine($"{comNewAccount} newaccount");
-        Console.WriteLine($"{comSetUserName} username");
-        Console.WriteLine($"{comSetEmail} email");
-        Console.WriteLine($"{comSetPassword} pasword");
         Console.WriteLine($"{comEnterAccount} enter");
         Console.WriteLine($"{comWriteName} writename");
     }
@@ -31,23 +26,41 @@ for (; ; )
     {
         names = AddNewStr(names, "Введите имя пользователя: ");
         emails = AddNewStr(emails, "Введите логин (адрес электронной почты): ");
-        
-        while(true)
+
+        while (true)
         {
             string newPassword = ReadStr("Введите пароль: ");
             string repeatPassword = ReadStr("Повторите пароль: ");
-            if(newPassword==repeatPassword)
+            if (newPassword == repeatPassword)
             {
-                Array.Resize(ref passwords, passwords.Length+1);
-                passwords[passwords.Length-1] = repeatPassword;
+                Array.Resize(ref passwords, passwords.Length + 1);
+                passwords[passwords.Length - 1] = repeatPassword;
                 break;
             }
             else Console.WriteLine("Пароли не совпадают. Попробуйте еще раз!");
         }
     }
+    if (userCommand.ToLower() == comEnterAccount)
+    {
+        string login = ReadStr("Введите логин (email): ");
+        string pass = ReadStr("Введите пароль: ");
+        bool exist = false;
+        for (int i = 0; i < names.Length; i++)
+        {
+            if (emails[i] == login && passwords[i] == pass)
+            {
+                Console.WriteLine($"{names[i]}, Добро пожаловать!");
+                exist = true;
+                break;
+            }
+        }
+        if (exist)
+        {
+            Console.WriteLine("Вы вошли в систему!");
+        }
+        else Console.WriteLine("Введены неверные имя пользователя или пароль!");
+    }
 }
-
-
 
 
 
@@ -60,7 +73,7 @@ string ReadStr(string msg)
 
 void WriteArray(string[] array)
 {
-    for(int i = 0; i < array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
         Console.Write(array[i] + " ");
     }
@@ -70,7 +83,7 @@ void WriteArray(string[] array)
 
 string[] AddNewStr(string[] array, string msg)
 {
-    Array.Resize(ref array, array.Length+1);
-    array[array.Length-1] = ReadStr(msg);
+    Array.Resize(ref array, array.Length + 1);
+    array[array.Length - 1] = ReadStr(msg);
     return array;
 }
